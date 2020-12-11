@@ -1,0 +1,103 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Information</title>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+  <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
+</head>
+
+<body>
+  <ion-app>
+    <ion-content>
+      <ion-header>
+        <ion-toolbar color="primary">
+
+          <ion-grid>
+            <ion-row>
+              <ion-col>
+                <ion-title>First App | Master 2</ion-title>
+              </ion-col>
+              <ion-col class="ion-text-end">
+                <ion-icon name="search-outline" size="large"></ion-icon>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-toolbar>
+      </ion-header>
+
+      <ion-col size-md="6" offset-sm="2" size-md="6" offset-md="3">
+        <ion-card>
+          </ion-card-header>
+          <ion-card-title>S'inscrire</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-item>
+              <ion-label position="floating">Email</ion-label>
+              <ion-input type="email" id="txtMail"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label position="floating">Phone number</ion-label>
+              <ion-input type="number" id="txtPhone"></ion-input>
+            </ion-item>
+            <div class="ion-text-end"></div>
+            <ion-button color="primary" id="btnSave">
+              <ion-icon name="checkmark-outline" slot="start"></ion-icon>Valider
+            </ion-button>
+            <ion-button color="danger" id="btnCancel" fill="outline">
+              <ion-icon name="close-outline" slot="start"></ion-icon>Annuler
+            </ion-button>
+          </ion-card-content>
+      </ion-col>
+
+
+      <ion-tabs>
+
+        <ion-tab tab="tab-schedule">
+          <ion-nav></ion-nav>
+        </ion-tab>
+
+        <ion-tab tab="tab-speaker">
+          <ion-nav></ion-nav>
+        </ion-tab>
+
+        <ion-tab tab="tab-map" component="page-map">
+          <ion-nav></ion-nav>
+        </ion-tab>
+
+        <ion-tab tab="tab-about" component="page-about">
+          <ion-nav></ion-nav>
+        </ion-tab>
+
+        <ion-tab-bar slot="bottom">
+          <ion-tab-button tab="tab-schedule">
+            <ion-icon name="calendar"></ion-icon>
+            <ion-label>Schedule</ion-label>
+            <ion-badge>6</ion-badge>
+          </ion-tab-button>
+
+          <ion-tab-button tab="tab-speaker">
+            <ion-icon name="person-circle"></ion-icon>
+            <ion-label>Speakers</ion-label>
+          </ion-tab-button>
+
+          <ion-tab-button tab="tab-map">
+            <ion-icon name="map"></ion-icon>
+            <ion-label>Map</ion-label>
+          </ion-tab-button>
+
+          <ion-tab-button tab="tab-about">
+            <ion-icon name="information-circle"></ion-icon>
+            <ion-label>About</ion-label>
+          </ion-tab-button>
+        </ion-tab-bar>
+
+      </ion-tabs>
+    </ion-content>
+  </ion-app>
+  <script src="index.js"></script>
+</body>
+
+</html>
